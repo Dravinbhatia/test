@@ -32,15 +32,6 @@ class Current: public Account
     cout<<"Service charge charged="<<s<<endl;
     cout<<"Your remaining balance is="<<(accbal)<<endl;
   }
-  void penalty()
-  {
-    if(accbal<=1000){
-    cout<<"Your account balance is less than the minimum amount"<<endl;
-    double p=0;
-    p=(1*accbal)/100;
-    accbal=accbal-p;
-    cout<<"Your remaining balance is="<<accbal<<endl;
-  }}
 };
 class Saving:public  Account
 {public:
