@@ -60,24 +60,24 @@ class Saving:public  Account
   }
 };
 int main()
-{int flag=0;
+{int count=0;
   cout<<"Enter 1 if you want to access Current account or enter 2 to access savings account"<<endl;
-  cin>>flag;
-  if(flag==1){
+  cin>>count;
+  if(count==1){
     Current obj1;
     obj1.details();
     obj1.sercharge();
     obj1.penalty();
   }
-  else if(flag==2){
+  else if(count==2){
     Saving obj;
     obj1.details();
-    int flag1=0;
+    int flag=0;
     cout<<"Enter 1 if u want to deposit or enter 2 if u want to withdraw"<<endl;
-    cin>>flag1;
-    if(flag1==1)
+    cin>>flag;
+    if(flag==1)
     obj1.deposit();
-    else if(flag1==2)
+    else if(flag==2)
     obj1.withdrawl();
     obj1.interest();
   }
