@@ -38,10 +38,10 @@ class Saving:public  Account
   double d;
   void deposit()
   {
-    cout<<"Enter the amount to be deposited"<<endl;
+    cout<<"Enter amount to be deposited"<<endl;
     cin>>d;
     accbal=accbal+d;
-    cout<<"Your updated balance is"<<accbal<<endl;
+    cout<<"Your updated balance "<<accbal<<endl;
   }
   void withdrawl()
   {
