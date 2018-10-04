@@ -38,10 +38,10 @@ class Saving:public  Account
   double d;
   void deposit()
   {
-    cout<<"Enter the amount to be deposited"<<endl;
+    cout<<"Enter amount to be deposited"<<endl;
     cin>>d;
     accbal=accbal+d;
-    cout<<"Your updated balance is"<<accbal<<endl;
+    cout<<"Your updated balance "<<accbal<<endl;
   }
   void withdrawl()
   {
@@ -54,7 +54,7 @@ class Saving:public  Account
   void interest()
   {
     double i=0;
-    cout<<"Rate of interest is 6% pa"<<endl;
+    cout<<"Rate of interest is 6% per annum"<<endl;
     i=(6*accbal)/100;
     cout<<"interest amount is="<<i<<endl;
   }
@@ -64,22 +64,22 @@ int main()
   cout<<"Enter 1 if you want to access Current account or enter 2 to access savings account"<<endl;
   cin>>flag;
   if(flag==1){
-    Current obj;
-    obj.details();
-    obj.sercharge();
-    obj.penalty();
+    Current obj1;
+    obj1.details();
+    obj1.sercharge();
+    obj1.penalty();
   }
   else if(flag==2){
     Saving obj;
-    obj.details();
+    obj1.details();
     int flag1=0;
-    cout<<"Enter 1 if u wanna deposit or enter 2 if u wanna withdraw"<<endl;
+    cout<<"Enter 1 if u want to deposit or enter 2 if u want to withdraw"<<endl;
     cin>>flag1;
     if(flag1==1)
-    obj.deposit();
+    obj1.deposit();
     else if(flag1==2)
-    obj.withdrawl();
-    obj.interest();
+    obj1.withdrawl();
+    obj1.interest();
   }
   else
   cout<<"You entered wrong choice"<<endl;
