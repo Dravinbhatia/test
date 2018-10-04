@@ -29,8 +29,8 @@ class Current: public Account
     cout<<"rate of service charge is 2% pa"<<endl;
     s=(2*accbal)/100;
     accbal=accbal-s;
-    cout<<"Service charge charged="<<s<<endl;
-    cout<<"Your remaining balance is="<<(accbal)<<endl;
+    cout<<"Service charge to be charged="<<s<<endl;
+    cout<<"Your remaining balance in account is="<<(accbal)<<endl;
   }
 };
 class Saving:public  Account
