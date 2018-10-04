@@ -64,22 +64,22 @@ int main()
   cout<<"Enter 1 if you want to access Current account or enter 2 to access savings account"<<endl;
   cin>>flag;
   if(flag==1){
-    Current obj;
-    obj.details();
-    obj.sercharge();
-    obj.penalty();
+    Current obj1;
+    obj1.details();
+    obj1.sercharge();
+    obj1.penalty();
   }
   else if(flag==2){
     Saving obj;
-    obj.details();
+    obj1.details();
     int flag1=0;
     cout<<"Enter 1 if u want to deposit or enter 2 if u want to withdraw"<<endl;
     cin>>flag1;
     if(flag1==1)
-    obj.deposit();
+    obj1.deposit();
     else if(flag1==2)
-    obj.withdrawl();
-    obj.interest();
+    obj1.withdrawl();
+    obj1.interest();
   }
   else
   cout<<"You entered wrong choice"<<endl;
