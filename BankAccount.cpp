@@ -54,7 +54,7 @@ class Saving:public  Account
   void interest()
   {
     double i=0;
-    cout<<"Rate of interest is 6% pa"<<endl;
+    cout<<"Rate of interest is 6% per annum"<<endl;
     i=(6*accbal)/100;
     cout<<"interest amount is="<<i<<endl;
   }
@@ -73,7 +73,7 @@ int main()
     Saving obj;
     obj.details();
     int flag1=0;
-    cout<<"Enter 1 if u wanna deposit or enter 2 if u wanna withdraw"<<endl;
+    cout<<"Enter 1 if u want to deposit or enter 2 if u want to withdraw"<<endl;
     cin>>flag1;
     if(flag1==1)
     obj.deposit();
