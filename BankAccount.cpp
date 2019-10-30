@@ -31,6 +31,7 @@ class Current: public Account
     accbal=accbal-s;
     cout<<"Service charge charged="<<s<<endl;
     cout<<"Your remaining balance is="<<(accbal)<<endl;
+
   }
 };
 class Saving:public  Account
@@ -42,6 +43,7 @@ class Saving:public  Account
     cin>>d;
     accbal=accbal+d;
     cout<<"Your updated balance is"<<accbal<<endl;
+
   }
   void withdrawl()
   {
@@ -50,6 +52,7 @@ class Saving:public  Account
     cin>>w;
     accbal=accbal-w;
     cout<<"Your remaining balance is="<<accbal<<endl;
+
   }
   void interest()
   {
@@ -57,6 +60,7 @@ class Saving:public  Account
     cout<<"Rate of interest is 5% pa"<<endl;
     i=(5*accbal)/100;
     cout<<"interest amount is="<<i<<endl;
+
   }
 };
 int main()
@@ -68,6 +72,7 @@ int main()
     obj.details();
     obj.sercharge();
     obj.penalty();
+
   }
   else if(flag==2){
     Saving obj;
@@ -80,8 +85,10 @@ int main()
     else if(flag1==2)
     obj.withdrawl();
     obj.interest();
+
   }
   else
   cout<<"You entered wrong choice"<<endl;
   return 0;
+
 }
