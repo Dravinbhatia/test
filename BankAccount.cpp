@@ -9,13 +9,13 @@ public:
   string type;
   double accbal;
   void details(){
-    cout<<"Enter your name "<<endl;
+    cout<<"Enter your Name "<<endl;
     cin>>name;
-    cout<<"Enter your account no."<<endl;
+    cout<<"Enter your Account no."<<endl;
     cin>>accno;
-    cout<<"Enter the type of account: Savings or current"<<endl;
+    cout<<"Enter the type of Account: Savings or Current"<<endl;
     cin>>type;
-    cout<<"Enter your acc. balance"<<endl;
+    cout<<"Enter your Acc. balance"<<endl;
     cin>>accbal;
 
   }
