@@ -26,7 +26,7 @@ class Current: public Account
   void sercharge()
   {
     double s;
-    cout<<"rate of service charge is 3% pa"<<endl;
+    cout<<"rate of service charge is 3% per annum"<<endl;
     s=(3*accbal)/100;
     accbal=accbal-s;
     cout<<"Service charge charged="<<s<<endl;
@@ -57,7 +57,7 @@ class Saving:public  Account
   void interest()
   {
     double i=0;
-    cout<<"Rate of interest is 5% pa"<<endl;
+    cout<<"Rate of interest is 5% per annum"<<endl;
     i=(5*accbal)/100;
     cout<<"interest amount is="<<i<<endl;
 
